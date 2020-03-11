@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @courier.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @courier.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_courier_path(@courier) %> |
+
+<%= link_to 'Back', couriers_path %> |
+
+<%= link_to 'Add package', new_package_path(@courier) %> 
